@@ -1,0 +1,16 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var CompanyAccount_1 = require("./class/CompanyAccount");
+var NewAccountType_1 = require("./class/NewAccountType");
+var dioAccount = new NewAccountType_1.NewAccountType("Lucas", 1);
+var companyAccount = new CompanyAccount_1.CompanyAccount("Nathy", 2);
+var newAccountType = new NewAccountType_1.NewAccountType("Joao", 3);
+dioAccount.getName();
+dioAccount.deposit(120);
+dioAccount.getMyBalance();
+dioAccount.addBalance(20);
+dioAccount.setBalance(1000);
+dioAccount.withdraw(100);
+companyAccount.getLoan(15000);
+newAccountType.deposit(150);
+console.log(dioAccount, companyAccount, newAccountType);
